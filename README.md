@@ -41,7 +41,7 @@
 - yarn install / yarn i
 
 ### 환경 변수 설정
-- VITE_API_KEY=your-api-key-here
+- VITE_OPENWEATHER_API_KEY=your-api-key-here
 - OpenWeather Api 사이트 접속 -> Sign up -> Api Key 발급
 - .env 생성 후 VITE_API_KEY=발급 Api key 입력
 
