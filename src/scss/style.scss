@@ -116,11 +116,11 @@
       gap: 16px;
     }
     .progress{
-      position: absolute;
+      position: fixed;
       width:500px;
       height:20px;
-      right: -350px;
-      top:128px;
+      right: 5%;
+      top:50%;
       .progress-bar{
         transform: rotate(90deg);
         .ant-progress-text {
@@ -144,5 +144,11 @@
   background-color: #fff;
   .container{
     p{margin: 0;}
+  }
+}
+
+@media screen and (max-width:1500px) {
+  .progress{
+    display: none;
   }
 }
