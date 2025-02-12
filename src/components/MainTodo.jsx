@@ -43,7 +43,7 @@ const MainTodo = ({ todos, handleDeleteTodo, handleEditTodo, handleComplete }) =
               <Title level={3}>{todo.text}</Title>
               <div className="todo-btn-box">
                <Button type={todo.completed ? "primary" : ""} onClick={() => handleComplete(todo.id)}>{todo.completed ? "완료됨" : "완료"}</Button>
-               <Button onClick={() => handleEdit(todo.id, todo.text)}>수정</Button>
+               {todo.completed ? ("") : (<Button onClick={() => handleEdit(todo.id, todo.text)}>수정</Button>)}
                <Button type="danger" onClick={() => handleDeleteTodo(todo.id)}>삭제</Button>
               </div>
             </>
